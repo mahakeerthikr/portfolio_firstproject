@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="framework/css/normailze.css">
     <link rel="stylesheet" href="framework/css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Orbitron|Lato:300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="framework/js/jquery.js"></script>
+    <script type="text/javascript" src="framework/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
+      <div class="container">
         <div class="row heading-padding">
             <div class="col-md-6">
                 <img src="http://placehold.it/180x100" class="img-responsive" alt="logo image">
@@ -35,21 +37,21 @@
         </div>
         <div class="row">
             <div class="col-md-4 text-center ">
-                <img src="http://placehold.it/350x150" class="img-responsive" alt="project1 image">
+                <img src="http://placehold.it/350x150" class="img-responsive" alt="project1 image" data-toggle="modal" data-target="#project1">
                 <h3 class="text-uppercase">project1</h3>
                 <a href="https://github.com/mahakeerthikr">
                     <p>github.com/mahakeerthikr</p>
                 </a>
             </div>
             <div class="col-md-4 text-center">
-                <img src="http://placehold.it/350x150" class="img-responsive" alt="project1 image">
+                <img src="http://placehold.it/350x150" class="img-responsive" alt="project1 image" data-toggle="modal" data-target="#project1">
                 <h3 class="text-uppercase">project 2</h3>
                 <a href="https://github.com/mahakeerthikr">
                     <p>github.com/mahakeerthikr</p>
                 </a>
             </div>
             <div class="col-md-4 text-center">
-                <img src="http://placehold.it/350x150" class="img-responsive" alt="project1 image">
+                <img src="http://placehold.it/350x150" class="img-responsive" alt="project1 image" data-toggle="modal" data-target="#project1">
                 <h3 class="text-uppercase">project 3</h3>
                 <a href="https://github.com/mahakeerthikr">
                     <p>github.com/mahakeerthikr</p>
@@ -57,6 +59,26 @@
             </div>
         </div>
     </div>
+
+<!--<img class="img-responsive" src="http://placehold.it/350x150" data-toggle="modal" data-target="#project1">-->
+
+    <!-- Modal -->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="http://placehold.it/350x150">
+        This was my first project in this class. I learned a lot about HTML and CSS.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
